@@ -1,15 +1,11 @@
 # Decomposable Config
 
-This is NOT designed to work in a browser. It needs file system access.
+This package provides a solution to allow a JSON based configuration to
+be decomposed into a filesystem structure or a single
+file JSON. The idea is that in certain cases it is makes sense to 'explode' the JSON file into something that is visible on the file system.
 
-The idea here is to be allow project configuration to be decmposed
-into a folder structure or a single JSON file.
-
-An example of allowed structure is presented in the example folder.
-
-Currently in experimental status. Code needs rework. Just here for
-validation with others for now.
-
+This is project hasn't had much validation, so any
+feedback or improvements. Would be appreciated.
 
 General conventions:
 
@@ -21,8 +17,21 @@ General conventions:
     a folder called `mykey`, then the latter will squash any entries
     defined for that key.
 
+A few notes:
 
+  - This is NOT designed to work in a browser. It needs file system access.
+  - This package is targeted at JSON based configuration files for now.
+
+## Installing
+
+To install this as a dependency to your project:
+
+    npm install decomposable-config
+
+or via yarn:
    
+    yarn install decomposable-config
+
 ## License
 
 Licensed under the MIT license. For details see the
