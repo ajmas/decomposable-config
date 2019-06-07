@@ -1,14 +1,23 @@
 {
   "name": "decomposable-config",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "directories": {
-    "example": "example"
-  },
+  "description": "A NodeJS module to allow decomposing a JSON configuration into folders",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
+    "build": "rollup src/index.js --file dist/index.js --format cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "MIT"
+  "author": {
+    "name": "Andre John Mas",
+    "url": "http://github.com/ajmas"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajmas/decomposable-config"
+  },
+  "devDependencies": {
+    "rollup": "^1.14.3"
+  }
 }

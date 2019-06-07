@@ -1,5 +1,7 @@
 # Decomposable Config
 
+This is NOT designed to work in a browser. It needs file system access.
+
 The idea here is to be allow project configuration to be decmposed
 into a folder structure or a single JSON file.
 
@@ -21,3 +23,7 @@ General conventions:
 
 
    
+## License
+
+Licensed under the MIT license. For details see the
+[LICENSE.md](./LICENSE.md) file
