@@ -4,9 +4,6 @@ This package provides a solution to allow a JSON based configuration to
 be decomposed into a filesystem structure or a single
 file JSON. The idea is that in certain cases it is makes sense to 'explode' the JSON file into something that is visible on the file system.
 
-This is project hasn't had much validation, so any
-feedback or improvements. Would be appreciated.
-
 General conventions:
 
   - Top level folder is treated as the root object
