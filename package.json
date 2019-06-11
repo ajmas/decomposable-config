@@ -1,6 +1,6 @@
 {
   "name": "decomposable-config",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A NodeJS module to allow decomposing a JSON configuration into folders",
   "main": "dist/index.js",
   "module": "dist/index.js",

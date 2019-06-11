@@ -11,10 +11,10 @@ const suffix = '.json';
 /**
  * Provides a version fs.stat that only throws an exception
  * if there is a failure other than 'file or folder does not exist'.
- * 
+ *
  * If a file or folder does exist, then undefined is returned.
- * 
- * @param {*} fileFoldePath 
+ *
+ * @param {*} fileFoldePath
  */
 async function getFileStats(fileFoldePath) {
     try {
@@ -22,14 +22,14 @@ async function getFileStats(fileFoldePath) {
     } catch (error) {
         if (error.code !== 'ENOENT') {
             throw error;
-        }         
+        }
     }
 }
 
 /**
  * Deal with the possible permutations of basePath
- * 
- * @param {*} basePath 
+ *
+ * @param {*} basePath
  */
 async function readJsonFile(basePath) {
     if (basePath.endsWith(suffix)) {
@@ -67,7 +67,7 @@ async function readConfig(configPath) {
         // if it contains an index file, then use that as the base
         // structure of the object
         subConfig = await readJsonFile(path.join(configPath, 'index'));
-        
+
         if (!subConfig) {
             subConfig = {};
         }
@@ -83,14 +83,14 @@ async function readConfig(configPath) {
                 if (name.endsWith(suffix)) {
                     name = name.substring(0, name.length - suffix.length);
                 }
-        
+
                 subConfig[name] = await readConfig(
                     path.join(configPath, entries[i])
                 );
             }
         }
         return subConfig;
-    } 
+    }
 }
 
 module.exports = { readConfig };
