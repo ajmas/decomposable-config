@@ -26,8 +26,15 @@ To install this as a dependency to your project:
     npm install decomposable-config
 
 or via yarn:
-   
+
     yarn install decomposable-config
+
+## Issues, Features Requests and Such
+
+If you discover a bug, have a feature request or other form of feedback,
+then please use the issue tracker on the [Github project](https://github.com/ajmas/decomposable-config).
+
+Before contributing any code, please open an issue, in the issue tracker.
 
 ## License
 
